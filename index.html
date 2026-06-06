@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Alpha Cut 2.0</title>
   <meta name="theme-color" content="#09090b">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Black+Ops+One&family=Russo+One&display=swap" rel="stylesheet">
   <link rel="manifest" href="manifest.json">
   <style>
     :root {
@@ -72,15 +72,20 @@
     }
     .hdr-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
     .hdr-brand {
-      font-size: 38px; font-weight: 800; letter-spacing: 0.5px;
-      color: var(--text);
+      font-family: 'Black Ops One', system-ui, sans-serif;
+      font-size: 44px; font-weight: normal; letter-spacing: 2px;
+      color: #a3a3a3;
       line-height: 1;
+      white-space: nowrap;
+      text-transform: uppercase;
     }
-    .app-icon-img { width: 75px; height: 75px; border-radius: 12px; }
+    .app-icon-img { width: 75px; height: 75px; border-radius: 12px; flex-shrink: 0; }
     .hdr-sub {
-      font-size: 14px; color: var(--text3); letter-spacing: 0.5px;
-      margin-top: 0; font-weight: 500;
+      font-size: 14px; color: #ffffff; letter-spacing: 0.5px;
+      font-weight: 600;
       line-height: 1;
+      text-transform: uppercase;
+      white-space: nowrap;
     }
     .hdr-actions { display:flex; gap:6px; }
     .icon-btn {
@@ -449,11 +454,11 @@
 <div id="app">
   <header class="app-header">
     <div class="hdr-top">
-      <div style="display: flex; align-items: center; gap: 16px;">
+      <div style="display: flex; align-items: center; gap: 12px; overflow: hidden;">
         <img src="icon.png" class="app-icon-img" alt="Icon">
-        <div style="display: flex; flex-direction: column; justify-content: space-between; height: 71px; padding: 2px 0;">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 75px; gap: 4px;">
           <div class="hdr-brand">ALPHA CUT</div>
-          <div class="hdr-sub">16-Week Tactical Training System</div>
+          <div class="hdr-sub">16-WEEK TACTICAL TRAINING SYSTEM</div>
         </div>
       </div>
       <div class="hdr-actions" style="position:relative;">
