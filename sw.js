@@ -1,4 +1,4 @@
-const CACHE_NAME = 'alpha-cut-v2-cache';
+const CACHE_NAME = 'alpha-cut-v2.1-cache';
 const urlsToCache = [
   './',
   './index.html',
